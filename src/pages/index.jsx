@@ -76,10 +76,10 @@ export default function Home() {
         </div>
 
         <div className={classes.home}>
-          <a href="/" className={classes.home_back_button}>
+          <Link href="/" className={classes.home_back_button}>
             <Image src="/img/header/home16.jpg" alt="" width={50} height={50} />
             <p className={classes.home_back}> ホーム </p>
-          </a>
+          </Link>
         </div>
 
         <form action="{{ route('logout') }}" method="POST">
