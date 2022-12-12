@@ -10,6 +10,10 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
 
+//ヘッダー
+import Typography from '@mui/material/Typography';
+import HomeIcon from '@mui/icons-material/Home';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 //グロナビのロゴ
 import EventSeatIcon from '@mui/icons-material/EventSeat';
@@ -75,20 +79,20 @@ export default function Home() {
           <input type="submit" value="さまへ" disabled />
         </div>
 
-        <div className={classes.home}>
-          <Link href="/" className={classes.home_back_button}>
-            <Image src="/img/header/home16.jpg" alt="" width={50} height={50} />
-            <p className={classes.home_back}> ホーム </p>
-          </Link>
-        </div>
+        <Typography component="div">
+          <ButtonGroup variant='' color='inherit' >
+            <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><HomeIcon /></Item><Item sx={{ fontSize: 5 }}>ホーム</Item></Box></Button>
+            <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><LogoutIcon /></Item><Item sx={{ fontSize: .0075 }}>ログアウト</Item></Box></Button>
+          </ButtonGroup>
+        </Typography>
 
-        <form action="{{ route('logout') }}" method="POST">
-          {/* @csrf */}
+        {/* <form action="{{ route('logout') }}" method="POST">
+          @csrf 
           <button type="submit" className={classes.logout_button}>
             <Image src="/img/header/logout16.jpg" alt="" width={72} height={16} />
             <p classNames={classes.logout}> ログアウト </p>
           </button>
-        </form>
+        </form> */}
       </header>
 
 

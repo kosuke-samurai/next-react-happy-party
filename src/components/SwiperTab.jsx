@@ -31,8 +31,6 @@ export const SwiperTab = () => {
                     sx={{
                         '& button': { color: 'A1A1A1', fontWeight: 'bold' },
                         '& button:hover': { backgroundColor: "#FB6673", color: '#FFFFFF' },
-                        '& button:active': { backgroundColor: "#FB6673", color: '#FFFFFF' },
-                        '& button:focus': { backgroundColor: "#FB6673", color: '#FFFFFF' },
                         '& button.Mui-selected': { backgroundColor: "#FB6673", color: '#FFFFFF' }
                     }}
                     TabIndicatorProps={{
