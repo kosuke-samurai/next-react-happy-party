@@ -81,8 +81,8 @@ export default function Home() {
 
         <Typography component="div">
           <ButtonGroup variant='' color='inherit' >
-            <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><HomeIcon /></Item><Item sx={{ fontSize: 5 }}>ホーム</Item></Box></Button>
-            <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><LogoutIcon /></Item><Item sx={{ fontSize: .0075 }}>ログアウト</Item></Box></Button>
+            <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><HomeIcon /></Item><Item sx={{ fontSize: 10 }}>ホーム</Item></Box></Button>
+            <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><LogoutIcon /></Item><Item sx={{ fontSize: 10 }}>ログアウト</Item></Box></Button>
           </ButtonGroup>
         </Typography>
 
