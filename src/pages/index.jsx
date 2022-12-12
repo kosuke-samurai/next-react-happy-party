@@ -28,8 +28,7 @@ import { pink } from '@mui/material/colors';
 
 // タブ
 import { SwiperTab } from 'src/components/SwiperTab'
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+
 
 
 

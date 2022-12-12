@@ -9,6 +9,9 @@ import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
+//タイムライン
+import { OppositeContentTimeline } from "src/components/Timeline"
+
 
 export const SwiperTab = () => {
     const [swiper, setSwiper] = useState(null);
@@ -31,7 +34,7 @@ export const SwiperTab = () => {
                     sx={{
                         '& button': { color: 'A1A1A1', fontWeight: 'bold' },
                         '& button:hover': { backgroundColor: "#FB6673", color: '#FFFFFF' },
-                        '& button:active': { backgroundColor: "#FB6673", color: '#FFFFFF' },
+                        '& button:active': { backgroundColor: "red", color: '#FFFFFF' },
                         '& button.Mui-selected': { backgroundColor: "#FB6673", color: '#FFFFFF' }
                     }}
                     TabIndicatorProps={{
@@ -58,7 +61,7 @@ export const SwiperTab = () => {
                 }}
             >
                 <SwiperSlide>トピックス</SwiperSlide>
-                <SwiperSlide>思い出</SwiperSlide>
+                <SwiperSlide>思い出<OppositeContentTimeline /></SwiperSlide>
                 <SwiperSlide>未来</SwiperSlide>
                 <SwiperSlide>写真</SwiperSlide>
             </Swiper>
