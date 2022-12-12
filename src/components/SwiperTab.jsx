@@ -25,6 +25,30 @@ export const SwiperTab = () => {
 
     return (
         <>
+            <Box sx={{ width: "100%", bgcolor: "#F7F7F7" }}>
+                <Tabs value={value}
+                    onChange={tabChange}
+                    sx={{
+                        '& button': { color: 'A1A1A1', fontWeight: 'bold' },
+                        '& button:hover': { backgroundColor: "#FB6673", color: '#FFFFFF' },
+                        '& button:active': { backgroundColor: "#FB6673", color: '#FFFFFF' },
+                        '& button:focus': { backgroundColor: "#FB6673", color: '#FFFFFF' },
+                        '& button.Mui-selected': { backgroundColor: "#FB6673", color: '#FFFFFF' }
+                    }}
+                    TabIndicatorProps={{
+                        style: {
+                            backgroundColor: '#FB6673',
+                        }
+                    }}
+                    centered
+                >
+                    <Tab label="トピックス" value={0} />
+                    <Tab label="思い出" value={1} />
+                    <Tab label="未来" value={2} />
+                    <Tab label="写真" value={3} />
+                </Tabs>
+            </Box>
+
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -34,18 +58,11 @@ export const SwiperTab = () => {
                     setSwiper(swiperInstance);
                 }}
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>トピックス</SwiperSlide>
+                <SwiperSlide>思い出</SwiperSlide>
+                <SwiperSlide>未来</SwiperSlide>
+                <SwiperSlide>写真</SwiperSlide>
             </Swiper>
-
-            <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
-                <Tabs value={value} onChange={tabChange} centered>
-                    <Tab label="Item One" value={0} />
-                    <Tab label="Item Two" value={1} />
-                    <Tab label="Item Three" value={2} />
-                </Tabs>
-            </Box>
         </>
     );
 };
