@@ -10,8 +10,6 @@ import { SwiperTab } from 'src/components/SwiperTab'
 
 
 
-
-
 export default function Home() {
 
   return (
