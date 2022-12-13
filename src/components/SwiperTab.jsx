@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import Box from "@mui/material/Box";
+import PropTypes from 'prop-types';
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
@@ -14,6 +15,33 @@ import { OppositeContentTimeline } from "src/components/Timeline"
 
 //トピ
 import { TopiWideTitle } from "./TopiWideTitle";
+import { TopiTitle } from "./TopiTitle";
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (
+        <Box
+            sx={{
+                p: 0,
+                m: 0,
+                ...sx,
+            }}
+            {...other}
+        />
+    );
+}
+
+Item.propTypes = {
+
+    sx: PropTypes.oneOfType([
+        PropTypes.arrayOf(
+            PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
+        ),
+        PropTypes.func,
+        PropTypes.object,
+    ]),
+};
 
 export const SwiperTab = () => {
     const [swiper, setSwiper] = useState(null);
@@ -62,9 +90,19 @@ export const SwiperTab = () => {
                     setSwiper(swiperInstance);
                 }}
             >
-                <SwiperSlide><TopiWideTitle /></SwiperSlide>
+                <SwiperSlide>
+
+                    <TopiWideTitle />
+                    <TopiTitle />
+                    <TopiTitle />
+                    <TopiTitle />
+
+
+
+
+                </SwiperSlide>
                 <SwiperSlide>思い出<OppositeContentTimeline /></SwiperSlide>
-                <SwiperSlide>未来</SwiperSlide>
+                <SwiperSlide>未来<TopiTitle /></SwiperSlide>
                 <SwiperSlide>写真</SwiperSlide>
             </Swiper>
         </>
