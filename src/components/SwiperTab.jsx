@@ -15,7 +15,7 @@ import { OppositeContentTimeline } from "src/components/Timeline"
 
 //トピ
 import { TopiWideTitle } from "./TopiWideTitle";
-import { TopiTitle } from "../pages/TopiTitle";
+import { TopiTitle } from 'src/components/TopiTitle';
 import { AttachEmail } from "@mui/icons-material";
 
 
