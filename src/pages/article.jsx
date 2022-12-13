@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Image from 'next/image';
-import { Header } from 'src/components/Header';
+
 
 import classes from 'src/styles/article.module.css'
 
@@ -10,7 +10,6 @@ export default function article() {
 
     return (
         <div>
-            <Header />
 
             <main id="article_main" className={classes.article_main}>
 

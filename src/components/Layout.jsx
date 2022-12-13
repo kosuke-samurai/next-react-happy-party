@@ -1,4 +1,5 @@
-import classes from 'src/components/Header.module.css'
+import classes from 'src/components/Layout.module.css'
+import Link from 'next/link';
 
 
 //ボタン
@@ -41,7 +42,7 @@ Item.propTypes = {
 };
 
 
-export function Header() {
+export function Layout({ children }) {
 
     const [value, setValue] = useState(0);
 
@@ -60,7 +61,7 @@ export function Header() {
 
                 <Typography component="div">
                     <ButtonGroup variant='' color='inherit' >
-                        <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><HomeIcon /></Item><Item sx={{ fontSize: 10 }}>ホーム</Item></Box></Button>
+                        <Link href='/'><Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><HomeIcon /></Item><Item sx={{ fontSize: 10 }}>ホーム</Item></Box></Button></Link>
                         <Button sx={{ p: 0.5, m: 0, }}><Box sx={{ flexDirection: 'column' }}><Item><LogoutIcon /></Item><Item sx={{ fontSize: 10 }}>ログアウト</Item></Box></Button>
                     </ButtonGroup>
                 </Typography>
@@ -73,6 +74,8 @@ export function Header() {
           </button>
         </form> */}
             </header>
+
+            <main>{children}</main>
         </div>
     )
 }

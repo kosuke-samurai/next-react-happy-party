@@ -1,8 +1,6 @@
 import * as React from 'react';
 
 
-//ヘッダー
-import { Header } from 'src/components/Header'
 //グロナビ
 import { Glonavi } from 'src/components/Glonavi'
 // タブ
@@ -14,8 +12,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* ヘッダー */}
-      <Header />
       {/* グロナビ */}
       <Glonavi />
       {/* タブ */}
