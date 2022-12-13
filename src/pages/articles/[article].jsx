@@ -8,7 +8,7 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 
 import { useRouter } from 'next/router';
 
-export default function article() {
+export default function Article() {
 
     const router = useRouter();
     console.log(router.query.meinImg);
