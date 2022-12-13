@@ -54,7 +54,7 @@
 .search_container {
     box-sizing: border-box;
     position: relative;
-    border: 3px solid #3879D9;
+    border: 2px solid #3879D9;
     padding: 3px 10px;
     border-radius: 0px;
     height: 2.3em;
@@ -72,7 +72,7 @@
 .search_container input[type="submit"] {
     cursor: pointer;
     font-family: FontAwesome;
-    border: none;
+    border: 2px solid #3879D9;
     background: #3879D9;
     color: #fff;
     position: absolute;
