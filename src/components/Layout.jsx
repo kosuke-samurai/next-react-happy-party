@@ -55,7 +55,7 @@ export function Layout({ children }) {
             <header className={classes.header}>
 
                 <div className={classes.search_container}>
-                    <input type="text" size="25" value="{{ \Auth::user()->name }}" readonly />
+                    <input type="text" size="25" value="{{ \Auth::user()->name }}" readOnly />
                     <input type="submit" value="さまへ" disabled />
                 </div>
 

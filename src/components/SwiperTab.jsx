@@ -15,7 +15,8 @@ import { OppositeContentTimeline } from "src/components/Timeline"
 
 //トピ
 import { TopiWideTitle } from "./TopiWideTitle";
-import { TopiTitle } from "./TopiTitle";
+import { TopiTitle } from "../pages/TopiTitle";
+import { AttachEmail } from "@mui/icons-material";
 
 
 function Item(props) {
@@ -56,6 +57,10 @@ export const SwiperTab = () => {
         swiper.slideTo(newValue);
     };
 
+
+
+
+
     return (
         <>
             <Box sx={{ width: "100%", bgcolor: "#F7F7F7" }}>
@@ -94,10 +99,6 @@ export const SwiperTab = () => {
 
                     <TopiWideTitle />
                     <TopiTitle />
-                    <TopiTitle />
-                    <TopiTitle />
-
-
 
 
                 </SwiperSlide>
