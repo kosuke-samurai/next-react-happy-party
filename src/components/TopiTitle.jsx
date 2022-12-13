@@ -6,7 +6,7 @@ export function TopiTitle() {
 
     return (
         <>
-            <Link className={classes.HlMidashi} href="">
+            <Link className={classes.HlMidashi} href="/article">
                 <article className={classes.article}>
                     <div>
                         <Image src="/img/article_photo.jpg" alt="" width={52} height={52} />
