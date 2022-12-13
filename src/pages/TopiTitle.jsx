@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import classes from 'src/components/TopiTitle.module.css'
 
+
 export function TopiTitle() {
 
     // トピ情報の配列
