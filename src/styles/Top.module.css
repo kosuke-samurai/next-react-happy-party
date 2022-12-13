@@ -54,7 +54,7 @@
 .search_container {
     box-sizing: border-box;
     position: relative;
-    border: 2px solid #3879D9;
+    border: 3px solid #3879D9;
     padding: 3px 10px;
     border-radius: 0px;
     height: 2.3em;
@@ -68,8 +68,6 @@
     border: none;
 
 }
-
-/* .search_container input[type="text"]:focus {} */
 
 .search_container input[type="submit"] {
     cursor: pointer;
