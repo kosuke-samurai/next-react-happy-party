@@ -19,7 +19,7 @@ export default function article() {
 
             <main id="article_main" className={classes.article_main}>
 
-                <article className={classes.article_detail}>
+                <div className={classes.article_detail}>
                     <div className={classes.image_container}>
                         <Image src={router.query.meinImg} alt="" layout="fill" className={classes.image} />
                     </div>
@@ -29,7 +29,7 @@ export default function article() {
                         <p className={classes.topi_time}>11/17（金）17:29</p>
                     </div>
 
-                </article>
+                </div>
 
                 <div className={classes.article_lead}>
                     <p className={classes.article_detail_text}>
